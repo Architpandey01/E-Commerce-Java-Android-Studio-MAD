@@ -1,4 +1,4 @@
-# Ecommerce App
+# Ecommerce Application
 ## Android Development
 🔥 Gained knowledge about Android Studio and Java
 
