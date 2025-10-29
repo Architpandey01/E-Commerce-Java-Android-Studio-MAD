@@ -33,6 +33,9 @@
         <activity
             android:name=".Activity.WishlistActivity"
             android:exported="false" />
+        <activity
+            android:name=".Activity.OrderSuccessActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

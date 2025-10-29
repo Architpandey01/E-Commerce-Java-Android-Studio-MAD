@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -16,6 +17,8 @@ import com.example.ecommerceapp.Helper.ChangeNumberItemsListener;
 import com.example.ecommerceapp.Helper.ManagementCart;
 import com.example.ecommerceapp.R;
 
+import androidx.appcompat.widget.AppCompatButton;
+
 public class CartActivity extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
     private RecyclerView recyclerView;
@@ -24,6 +27,7 @@ public class CartActivity extends AppCompatActivity {
     private double tax;
     private ScrollView scrollView;
     private ImageView backBtn;
+    private AppCompatButton orderNowBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -80,6 +84,10 @@ public class CartActivity extends AppCompatActivity {
                 finish();
             }
         });
+        orderNowBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(CartActivity.this, OrderSuccessActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void initView() {
@@ -91,5 +99,6 @@ public class CartActivity extends AppCompatActivity {
         scrollView = findViewById(R.id.scrollView2);
         backBtn = findViewById(R.id.backBtn);
         emptyTxt = findViewById(R.id.emptyTxt);
+        orderNowBtn = findViewById(R.id.button);
     }
 }
