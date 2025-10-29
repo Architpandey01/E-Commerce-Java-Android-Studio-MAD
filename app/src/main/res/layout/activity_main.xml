@@ -33,23 +33,13 @@
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Welcome"
-                    android:textColor="@color/black"
+                    android:text="Welcome, GSFCU User!"
+                    android:textColor="@color/red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="1dp"
-                    android:text="Lakshya Goel"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView"
-                    tools:textColor="@color/black" />
 
                 <ImageView
                     android:id="@+id/imageView"
@@ -148,19 +138,6 @@
                         app:srcCompat="@drawable/girl" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:background="@drawable/orange_button_background"
-                    android:gravity="center"
-                    android:text="But now"
-                    android:textColor="@color/white"
-                    app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
-                    app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
-                    app:layout_constraintStart_toStartOf="@+id/constraintLayout"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
@@ -184,6 +161,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:id="@+id/cat_pc"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 
@@ -218,6 +196,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:id="@+id/cat_phone"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 
@@ -252,6 +231,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:id="@+id/cat_headsets"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 
@@ -286,6 +266,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:id="@+id/cat_gaming"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 
@@ -320,6 +301,7 @@
                 <LinearLayout
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:id="@+id/cat_view_all"
                     android:layout_weight="0.2"
                     android:orientation="vertical">
 

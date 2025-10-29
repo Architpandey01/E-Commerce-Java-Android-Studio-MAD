@@ -1,0 +1,128 @@
+[
+  {
+    "title": "MacBook Pro 13 M2 Chip",
+    "description": "Discover the new MacBook Pro featuring the powerful M2 Chip. Sleek design and advanced performance.",
+    "picUrl": "pic1",
+    "review": 15,
+    "score": 4.0,
+    "price": 1299.99,
+    "category": "PC"
+  },
+  {
+    "title": "PlayStation 5",
+    "description": "Next-gen gaming console with ultra-fast SSD and immersive graphics.",
+    "picUrl": "pic2",
+    "review": 10,
+    "score": 4.5,
+    "price": 499.99,
+    "category": "Gaming"
+  },
+  {
+    "title": "iPhone 15",
+    "description": "Advanced camera system and durable design with great battery life.",
+    "picUrl": "iphone",
+    "review": 13,
+    "score": 4.2,
+    "price": 799.0,
+    "category": "Phone"
+  },
+  {
+    "title": "Samsung S24 Ultra",
+    "description": "The Samsung Galaxy S24 Ultra — advanced camera, large display and long battery life.",
+    "picUrl": "samsungs24ultra",
+    "review": 21,
+    "score": 4.6,
+    "price": 1199.99,
+    "category": "Phone"
+  },
+  {
+    "title": "iPhone 16 Purple",
+    "description": "The new iPhone 16 in Purple — improved cameras and performance.",
+    "picUrl": "iphone16purple",
+    "review": 18,
+    "score": 4.5,
+    "price": 1099.99,
+    "category": "Phone"
+  },
+  {
+    "title": "OnePlus 13R",
+    "description": "High-performance OnePlus 13R with fast charging and smooth display.",
+    "picUrl": "oneplus13r",
+    "review": 9,
+    "score": 4.2,
+    "price": 699.99,
+    "category": "Phone"
+  },
+  {
+    "title": "Google Pixel 9a",
+    "description": "Google Pixel 9a — great camera and clean Android experience.",
+    "picUrl": "googlepixel9a",
+    "review": 7,
+    "score": 4.1,
+    "price": 499.0,
+    "category": "Phone"
+  },
+  {
+    "title": "MacBook Pro",
+    "description": "Powerful MacBook Pro with M-series performance and stunning Retina display.",
+    "picUrl": "macbookpro",
+    "review": 25,
+    "score": 4.8,
+    "price": 1999.99,
+    "category": "PC"
+  },
+  {
+    "title": "MacBook Air",
+    "description": "Lightweight MacBook Air for everyday portability and solid battery life.",
+    "picUrl": "macbookair",
+    "review": 17,
+    "score": 4.5,
+    "price": 999.99,
+    "category": "PC"
+  },
+  {
+    "title": "iPhone 17 Pro Max Orange",
+    "description": "iPhone 17 Pro Max in Orange — large display, best-in-class cameras and pro-level performance.",
+    "picUrl": "iphone17promaxorange",
+    "review": 12,
+    "score": 4.7,
+    "price": 1299.99,
+    "category": "Phone"
+  },
+  {
+    "title": "Apple AirPods Max (Beige)",
+    "description": "Premium over-ear headphones with active noise cancellation and immersive sound.",
+    "picUrl": "appleairpodsmaxbeige",
+    "review": 8,
+    "score": 4.6,
+    "price": 549.99,
+    "category": "Headsets"
+  },
+  {
+    "title": "Apple AirPods Max (Blue)",
+    "description": "Premium over-ear headphones in blue with spatial audio support.",
+    "picUrl": "appleairpodsmaxblue",
+    "review": 10,
+    "score": 4.7,
+    "price": 549.99,
+    "category": "Headsets"
+  },
+  {
+    "title": "Corsair Gaming Keyboard",
+    "description": "Mechanical gaming keyboard with RGB lighting and programmable keys.",
+    "picUrl": "corsairgamingkeyboard",
+    "review": 14,
+    "score": 4.5,
+    "price": 149.99,
+    "category": "Gaming"
+  },
+  {
+    "title": "HyperX Wireless Mouse",
+    "description": "Ergonomic wireless gaming mouse with high-precision sensor and long battery life.",
+    "picUrl": "hyperxmouse",
+    "review": 11,
+    "score": 4.4,
+    "price": 59.99,
+    "category": "Gaming"
+  }
+]

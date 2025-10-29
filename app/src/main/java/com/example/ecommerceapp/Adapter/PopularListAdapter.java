@@ -22,15 +22,29 @@ import java.util.ArrayList;
 public class PopularListAdapter extends RecyclerView.Adapter<PopularListAdapter.ViewHolder> {
     ArrayList<PopularDomain> items;
     Context context;
+    private int layoutId;
 
+    // default constructor uses original horizontal item layout
     public PopularListAdapter(ArrayList<PopularDomain> items) {
+        this(items, R.layout.viewholder_pop_list);
+    }
+
+    // overloaded constructor allows using a different item layout (e.g., grid layout)
+    public PopularListAdapter(ArrayList<PopularDomain> items, int layoutId) {
         this.items = items;
+        this.layoutId = layoutId;
+    }
+
+    // Replace adapter data and refresh the view
+    public void updateList(ArrayList<PopularDomain> newItems) {
+        this.items = newItems;
+        notifyDataSetChanged();
     }
 
     @NonNull
     @Override
     public PopularListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View inflate = LayoutInflater.from(parent.getContext()).inflate(R.layout.viewholder_pop_list, parent, false);
+        View inflate = LayoutInflater.from(parent.getContext()).inflate(layoutId, parent, false);
         context = parent.getContext();
         return new ViewHolder(inflate);
     }
@@ -38,7 +52,7 @@ public class PopularListAdapter extends RecyclerView.Adapter<PopularListAdapter.
     @Override
     public void onBindViewHolder(@NonNull PopularListAdapter.ViewHolder holder, int position) {
         holder.titleTxt.setText(items.get(position).getTitle());
-        holder.feeTxt.setText("$" + items.get(position).getPrice());
+        holder.feeTxt.setText("₹" + items.get(position).getPrice());
         holder.ScoreTxt.setText("" + items.get(position).getScore());
 
         int drawableResourceId = context.getResources().getIdentifier(items.get(position).getPicUrl(),

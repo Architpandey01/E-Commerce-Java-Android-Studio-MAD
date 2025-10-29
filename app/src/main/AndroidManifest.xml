@@ -19,6 +19,9 @@
             android:name=".Activity.DetailActivity"
             android:exported="false" />
         <activity
+            android:name=".Activity.CategoryActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -27,6 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activity.WishlistActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

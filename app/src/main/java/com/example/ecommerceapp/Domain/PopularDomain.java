@@ -10,6 +10,7 @@ public class PopularDomain implements Serializable {
     private double score;
     private int numberinCart;
     private double price;
+    private String category;
 
     public PopularDomain(String title, String description, String picUrl, int review, double score, double price) {
         this.title = title;
@@ -18,6 +19,15 @@ public class PopularDomain implements Serializable {
         this.review = review;
         this.score = score;
         this.price = price;
+    }
+
+    // Needed for Gson or when loading category from JSON
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public double getPrice() {

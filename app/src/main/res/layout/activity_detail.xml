@@ -104,7 +104,7 @@
                         android:id="@+id/priceTxt"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="$512"
+                        android:text="₹512"
                         android:textColor="@color/black"
                         android:textSize="23sp"
                         android:textStyle="bold" />
@@ -196,14 +196,14 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/addToCartBtn"
-                android:background="@drawable/red_button_background"
-                android:layout_margin="16dp"
                 style="@android:style/Widget.Button"
-                android:textSize="18dp"
-                android:textColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Buy Now" />
+                android:layout_margin="16dp"
+                android:background="@drawable/red_button_background"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

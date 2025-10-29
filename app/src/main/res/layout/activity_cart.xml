@@ -113,7 +113,7 @@
                     style="@style/textStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$-"
+                    android:text="₹-"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView20" />
 
@@ -123,7 +123,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="$-"
+                    android:text="₹-"
                     app:layout_constraintEnd_toEndOf="@+id/totalFeeTxt"
                     app:layout_constraintTop_toBottomOf="@+id/totalFeeTxt" />
 
@@ -133,7 +133,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    android:text="$-"
+                    android:text="₹-"
                     app:layout_constraintEnd_toEndOf="@+id/deliveryTxt"
                     app:layout_constraintTop_toBottomOf="@+id/deliveryTxt" />
 
@@ -163,7 +163,7 @@
                     style="@style/textStyleBold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="$-"
+                    android:text="₹-"
                     app:layout_constraintBottom_toBottomOf="@+id/textView28"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/textView28" />

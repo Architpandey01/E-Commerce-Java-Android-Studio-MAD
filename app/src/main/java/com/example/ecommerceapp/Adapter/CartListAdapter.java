@@ -40,8 +40,8 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
     @Override
     public void onBindViewHolder(@NonNull CartListAdapter.ViewHolder holder, int position){
         holder.title.setText(listItemSelected.get(position).getTitle());
-        holder.feeEachItem.setText("$" + listItemSelected.get(position).getPrice());
-        holder.totalEachItem.setText("$" + Math.round((listItemSelected.get(position).getNumberinCart() * listItemSelected.get(position).getPrice())));
+        holder.feeEachItem.setText("₹" + listItemSelected.get(position).getPrice());
+        holder.totalEachItem.setText("₹" + Math.round((listItemSelected.get(position).getNumberinCart() * listItemSelected.get(position).getPrice())));
         holder.num.setText(String.valueOf(listItemSelected.get(position).getNumberinCart()));
 
         int drawableResourceId = holder.itemView.getContext().getResources()
@@ -55,26 +55,32 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         holder.plusItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                managementCart.plusNumberItem(listItemSelected, position, new ChangeNumberItemsListener() {
-                    @Override
-                    public void change() {
-                        notifyDataSetChanged();
-                        changeNumberItemsListener.change();
-                    }
-                });
+                int pos = holder.getAdapterPosition();
+                if (pos != RecyclerView.NO_POSITION) {
+                    managementCart.plusNumberItem(listItemSelected, pos, new ChangeNumberItemsListener() {
+                        @Override
+                        public void change() {
+                            notifyDataSetChanged();
+                            changeNumberItemsListener.change();
+                        }
+                    });
+                }
             }
         });
 
         holder.minusItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                managementCart.minusNumberItem(listItemSelected, position, new ChangeNumberItemsListener() {
-                    @Override
-                    public void change() {
-                        notifyDataSetChanged();
-                        changeNumberItemsListener.change();
-                    }
-                });
+                int pos = holder.getAdapterPosition();
+                if (pos != RecyclerView.NO_POSITION) {
+                    managementCart.minusNumberItem(listItemSelected, pos, new ChangeNumberItemsListener() {
+                        @Override
+                        public void change() {
+                            notifyDataSetChanged();
+                            changeNumberItemsListener.change();
+                        }
+                    });
+                }
             }
         });
 
